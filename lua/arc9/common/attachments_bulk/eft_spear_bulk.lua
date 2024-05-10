@@ -275,6 +275,43 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_spear_buffertube_ct")
 
+///////////////////////////////////////      eft_spear_buffertube_ct_blk
+
+
+ATT = {}
+
+ATT.PrintName = "MCX/MPX folding stock adapter buffer tube (Black)"
+ATT.CompactName = "MCX/MPX (B)"
+ATT.Description = [[A buffer tube for the folding stock adapter for SIG AR platform rifles and SMGs. Manufactured by SIG Sauer. 
+
+UNOFFICIAL Black version.]]
+ATT.Icon = Material("entities/eft_spear_attachments/tubb.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_base_sig_low_profile_tube.mdl"
+ATT.ModelSkin = 1
+
+ATT.HasBufferTube = true
+
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.Category = "eft_spear_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = "Stock",
+        Category = "eft_ar_stock",
+        Pos = Vector(3.5, 0, 0.7),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_spear_buffertube_ct_blk")
+
 ///////////////////////////////////////      eft_spear_mz_std
 
 ATT = {}
