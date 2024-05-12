@@ -705,12 +705,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             Source = "reload0",
             MinProgress = 0.85,
             FireASAP = true,
+            MagSwapTime = 1,
             EventTable = rst_def,
             IKTimeLine = rik_def
         },
         ["reload1"] = {
             Source = "reload1",
             MinProgress = 0.85,
+            MagSwapTime = 1,
             FireASAP = true,
             EventTable = rst_def1,
             IKTimeLine = rik_def
