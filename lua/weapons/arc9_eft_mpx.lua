@@ -462,14 +462,13 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 
                 if ARC9EFTBASE and SERVER then
                     net.Start("arc9eftmagcheck")
-                    net.WriteBool(false) -- accurate or not based on mag type
+                    net.WriteBool(elements["eft_mpx_mag_30"] and true or false) -- accurate or not based on mag type
                     net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
                     net.WriteUInt(swep:GetCapacity(), 9)
                     net.Send(swep:GetOwner())
                 end
             else
-                if nomag and rand == 2 then 
-                    if swep:Clip1() == 1 then return "trick" else rand = 0 end end
+                if nomag and rand == 2 then rand = 0 end
                 ending = rand
             end
             
@@ -721,6 +720,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             Source = "reload_empty0", 
             MinProgress = 0.85,
             FireASAP = true,
+            MagSwapTime = 1,
             EventTable = rst_empty,
             IKTimeLine = rik_empty
         },
@@ -728,6 +728,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             Source = "reload_empty1", 
             MinProgress = 0.85,
             FireASAP = true,
+            MagSwapTime = 1,
             EventTable = rst_empty1,
             IKTimeLine = rik_empty
         },
