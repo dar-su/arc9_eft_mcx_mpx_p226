@@ -342,6 +342,11 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 local path = "weapons/darsu_eft/p226/"
 local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
 
+SWEP.ShootPitchVariation = 0
+SWEP.DistantShootVolume = 0.05
+SWEP.DistantShootVolumeActual = 0.05
+
+
 SWEP.ShootSound = { path .. "p226_fire_close.ogg", path .. "p226_fire_close2.ogg" }
 SWEP.ShootSoundIndoor = { path .. "pm_indoor_close1.ogg", path .. "pm_indoor_close2.ogg" }
 SWEP.DistantShootSound = { path .. "p226_fire_distant.ogg", path .. "p226_fire_distant2.ogg" }
