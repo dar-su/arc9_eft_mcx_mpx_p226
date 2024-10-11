@@ -466,6 +466,34 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_25
 
 ARC9.LoadAttachment(ATT, "eft_ar10_mag_l7_25")
 
+///////////////////////////////////////      eft_spear_bolting
+
+
+ATT = {}
+
+ATT.PrintName = "SPEAR No Bolt catch"
+ATT.CompactName = "No Catch"
+ATT.Icon = Material("entities/eft_spear_attachments/bolt.png", "mips smooth")
+ATT.Description = [[Makes operator use bolt instead of bolt catch on reloads
+
+Not presents in EFT, custom att.]]
+
+ATT.SortOrder = -2
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_custom_slot_spear"}
+ATT.Attachments = {
+    {
+        PrintName = "Custom slot",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(0, 0, 0),
+        Category = {"eft_custom_slot", "eft_custom_slot_spear"},
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_spear_bolting")
+
+
 
 
 

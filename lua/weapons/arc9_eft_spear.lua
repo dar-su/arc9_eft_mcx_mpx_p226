@@ -440,6 +440,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     if anim == "reload" or anim == "reload_empty" then
         if nomag then return "reload_single" end
+        if empty and elements["eft_spear_bolting"] then return "reload_empty_bolt" .. mag end
         if empty then return "reload_empty" .. mag end
         return anim .. mag
     end
@@ -824,6 +825,123 @@ SWEP.Animations = {
         },
     },    
     
+
+    ["reload_empty_bolt_0"] = {
+        Source = {"reload_empty0_0a", "reload_empty0_1a", "reload_empty0_2a"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.12 },
+            { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.47 },
+            { s = pouchout, t = 0.99 },
+            { s = randspin, t = 1.06 },
+            { s = path .. "fiveseven_mag_rattle2.ogg", t = 1.47 },
+            { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "rsass_bolt_out.ogg", t = 75/27 }, -- (72+83+80)/3
+            { s = path .. "rsass_bolt_in.ogg", t = 83/27 }, -- 78 90 87
+            { s = randspin, t = 3.05 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1.1}
+        },
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_bolt_1"] = {
+        Source = {"reload_empty1_0a", "reload_empty1_1a", "reload_empty1_2a"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.12 },
+            { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.47 },
+            { s = pouchout, t = 0.99 },
+            { s = randspin, t = 1.06 },
+            { s = path .. "fiveseven_mag_rattle2.ogg", t = 1.47 },
+            { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "rsass_bolt_out.ogg", t = 70.5/27 }, -- (69+76+76)/3
+            { s = path .. "rsass_bolt_in.ogg", t = 78/27 }, -- 75 83 83
+            { s = randspin, t = 3.05 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1.1}
+        },
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_bolt_2"] = {
+        Source = {"reload_empty2_0a", "reload_empty2_1a", "reload_empty2_2a"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.12 },
+            { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.47 },
+            { s = pouchout, t = 0.99 },
+            { s = randspin, t = 1.06 },
+            { s = path .. "fiveseven_mag_rattle2.ogg", t = 1.47 },
+            { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "rsass_bolt_out.ogg", t = 76/27 }, -- (71+79+78)/3
+            { s = path .. "rsass_bolt_in.ogg", t = 83/27 }, -- 77 86 85
+            { s = randspin, t = 3.05 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1.1}
+        },
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_bolt_3"] = {
+        Source = {"reload_empty3_0a", "reload_empty3_1a", "reload_empty3_2a"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.12 },
+            { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.47 },
+            { s = pouchout, t = 0.99 },
+            { s = randspin, t = 1.06 },
+            { s = path .. "fiveseven_mag_rattle2.ogg", t = 1.47 },
+            { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "rsass_bolt_out.ogg", t = 75/27 }, -- (72+80+87)/3
+            { s = path .. "rsass_bolt_in.ogg", t = 84/27 }, -- 78 79 84
+            { s = randspin, t = 3.05 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1.1}
+        },
+        IKTimeLine = rik_reloadempty
+    },
+    ["reload_empty_bolt_4"] = {
+        Source = {"reload_empty4_0a", "reload_empty4_1a", "reload_empty4_2a"},
+        MinProgress = 0.85,
+        FireASAP = true,
+        MagSwapTime = 1.5,
+        EventTable = {
+            { s = randspin, t = 0.12 },
+            { s = "arc9_eft_shared/weap_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_magout_plastic.ogg", t = 0.47 },
+            { s = pouchout, t = 0.99 },
+            { s = randspin, t = 1.06 },
+            { s = path .. "fiveseven_mag_rattle2.ogg", t = 1.47 },
+            { s = "arc9_eft_shared/weap_magin_plastic.ogg", t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "rsass_bolt_out.ogg", t = 76/27 }, -- (72+81+88)/3
+            { s = path .. "rsass_bolt_in.ogg", t = 82/27 },
+            { s = randspin, t = 3.05 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1.1}
+        },
+        IKTimeLine = rik_reloadempty
+    },
+
 
 
     ["inspect1"] = {
