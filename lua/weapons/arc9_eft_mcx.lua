@@ -12,7 +12,7 @@ SWEP.Credits = {
     [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
 }
 
-SWEP.PrintName = "SIG MCX"
+SWEP.PrintName = "SIG MCX .300 BLK"
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.Trivia = {
     [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "SIG Sauer",
