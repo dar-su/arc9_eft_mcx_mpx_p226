@@ -67,7 +67,7 @@ end
 SWEP.Spread = 9.97 * ARC9.MOAToAcc
 SWEP.RPM = 450
 SWEP.EFTErgo = 80
-SWEP.BarrelLength = 25
+SWEP.BarrelLength = 16
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = { { Mode = 1 } }
 
@@ -171,6 +171,7 @@ SWEP.DamageLookupTable = {
 SWEP.MalfunctionNeverLastShoot = true 
 SWEP.MalfunctionMeanShotsToFail = 700
 SWEP.MalfunctionMeanShotsToFailMultHot = -20
+SWEP.MalfunctionWait = -1 -- oh god why the fuck 0 is 0.5???????
 SWEP.HeatCapacity = 100
 SWEP.HeatDissipation = 2
 
