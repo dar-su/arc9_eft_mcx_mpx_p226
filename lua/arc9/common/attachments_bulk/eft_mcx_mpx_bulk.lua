@@ -334,13 +334,13 @@ ATT.Icon = Material("entities/eft_mcx_attachments/tele.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_all_sig_mpx_mcx_early_type.mdl"
 
-ATT.HasStock = true
 
 ATT.ToggleStats = {
     {
         PrintName = "Extended",
         RecoilMult = 0.74,
         VisualRecoilMult = 0.74,
+        HasStock = true
     },
     {
         PrintName = "Collapsed",
