@@ -388,7 +388,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Attachments = {
     {
         PrintName = "Buffer Tube",
-        Category = "eft_ar15_buffertube",
+        Category = {"eft_ar15_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(1.87, 0, -0.23),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.2, 0, 0.5),
