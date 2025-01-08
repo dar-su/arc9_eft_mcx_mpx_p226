@@ -63,7 +63,7 @@ SWEP.Firemodes = {
 SWEP.Slot = 2
 
 -- this thing can one hand sprint
-local handupang, handuppos, handupholdtype = Angle(-2, 40, -7), Vector(1, -5, -6), "normal"
+local handupang, handuppos, handupholdtype = Angle(-2, 40, -7), Vector(0, -4, -10), "normal"
 SWEP.OneHandedSprint = true
 SWEP.OneHandedSprintHook = function(self, old) if self:GetValue("HasStock") then return false end end
 SWEP.SprintAngHook = function(self, old) if !self:GetValue("HasStock") then return handupang end end
