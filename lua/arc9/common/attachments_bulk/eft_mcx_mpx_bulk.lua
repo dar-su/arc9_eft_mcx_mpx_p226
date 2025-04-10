@@ -15,6 +15,7 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mcx_charge"}
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mcx_ch")
 
 
@@ -88,6 +89,7 @@ ATT.Attachments = {
     },
     -- add mrp45 and tac thing
 }
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_mcx_rec")
 
@@ -261,6 +263,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_12")
 
 ///////////////////////////////////////      eft_mcx_hg_8
@@ -318,6 +321,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mcx_hg_8")
 
 
@@ -491,6 +495,7 @@ ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.AdvancedCamoSupport = true
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_light")
 
 ///////////////////////////////////////      eft_mcx_stock_tele
