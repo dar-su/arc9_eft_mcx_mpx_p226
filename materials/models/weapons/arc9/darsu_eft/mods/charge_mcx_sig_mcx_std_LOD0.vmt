@@ -18,10 +18,14 @@
     "$envmap"           "env_cubemap"
     "$envmaptint"       "[0.025 0.025 0.025]"
     "$color2"           "[0.88 0.88 0.88]"
-    
-    "$detailblendmode" "4"
-    "$detailblendfactor" "1"
 
+    "$detailblendmode" "4"
+    "$detailblendfactor" "0.5"
+    "$detailscale" "0.7"
+
+    "$detailangle" 0
+    "$attname" "eft_mcx_ch"
+    
     "Proxies"
     {
         "Arc9EnvMapTint"
@@ -34,10 +38,18 @@
         "Arc9CustomCamoAdvanced" 
         {
             "camoTexture" $detail
+            "camoScale" $detailscale
+            "camoAngle" $detailangle
+            "camoBlendMode" $detailblendmode
+            "camoBlendFactor" $detailblendfactor
             "phonk" $phongboost
-            "attName" "eft_mcx_ch"
             "color" "[0.99 0.99 0.99]"
         }
 
+        "TextureTransform"
+        {
+            "rotateVar" "$detailangle"
+            "resultVar" "$detailtexturetransform"
+        }
     }
 }
