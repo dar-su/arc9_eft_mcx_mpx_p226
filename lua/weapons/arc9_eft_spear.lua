@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "SIG MCX-SPEAR"
-SWEP.Description = [[The MCX SPEAR is a multi-caliber assault rifle designed and manufactured by SIG Sauer based on the MCX assault rifle. Primarily chambered in the new 6.8x51mm (.277 FURY) ammunition. Designed specifically for the US Military to replace the M4 carbine.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mcxspear_alt")
+SWEP.Description = "eft_weapon_mcxspear_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Class = "eft_class_weapon_ar"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "SIG Sauer",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "6.8x51mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_belg"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2019"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_sig",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_68x51",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_usa",
+    ["eft_trivia_year5"] = "2019"
 }
 
 SWEP.StandardPresets = false 

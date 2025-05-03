@@ -8,18 +8,18 @@ SWEP.Spawnable = file.Exists("weapons/arc9_eft_m4a1.lua", "LUA")
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "SIG MCX .300 BLK"
-SWEP.Description = [[The .300 Blackout MCX line, designed and manufactured by SIG Sauer, is available in both semi-automatic and automatic versions and features a short-stroke gas piston system, which is inherited from the earlier SIG MPX submachine gun. The .300 Blackout ammo and the MCX are compatible with all AR-15 magazines.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mcx")
+SWEP.Description = "eft_weapon_mcx_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Class = "eft_class_weapon_ar"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "SIG Sauer",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x35mm (.300 Blackout)",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_germ"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2015"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_sig",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x35",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_usa",
+    ["eft_trivia_year5"] = "2015"
 }
 
 SWEP.StandardPresets = false 

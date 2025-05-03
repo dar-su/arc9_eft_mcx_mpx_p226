@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "SIG P226R"
-SWEP.Description = [[The P226R is a full-sized, service-type pistol made by SIG Sauer. Chambered in 9x19mm Parabellum, it features a Picatinny rail mount on the underside of the frame. Its the standard service weapon of Navy SEALs.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_p226r")
+SWEP.Description = "eft_weapon_p226r_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
+SWEP.Class = "eft_class_weapon_pist"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "SIG Sauer",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"]= ARC9:GetPhrase("eft_trivia_act_recoil"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_germ"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2011 ?"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_sig",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"]= "eft_trivia_act_recoil",
+    ["eft_trivia_country4"] = "eft_trivia_country_germ",
+    ["eft_trivia_year5"] = "2011 ?"
 }
 
 
